@@ -1,4 +1,3 @@
-
 def calc_area(answer):
     radius = float(input("\nEnter the radius of the circle: "))
     area = 3.14159 * (radius ** 2)
@@ -10,4 +9,3 @@ def calc_circumference(answer):
     circumference = 2 * 3.14159 * radius
     answer = circumference
     return answer
-    
