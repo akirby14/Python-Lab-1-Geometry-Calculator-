@@ -1,10 +1,15 @@
 import circle
 import rectangle
 
+'''
+Aliases are necessary when importing these modules to prevent naming conflicts with the functions in the file.
+'''
+
 def calculator_prompt():
     num_choices = ["1", "2", "3", "4", "5"]
     choice = " "
-    
+    answer = 0
+
     while choice != 5:
         print("\nGeometry Calculator \n-------------------")
         print("1. Calculate Circle Area")
@@ -21,20 +26,19 @@ def calculator_prompt():
         else:
             choice = int(choice)
             if choice == 1:
-                circle.calc_area()
+                print(f"\nThe area of the circle is: {circle.calc_area(answer):.2f}.")
                 input("\nPlease press Enter to continue...")
-
             elif choice == 2:
-                circle.calc_circumference()
+                print(f"\nThe circumference of the circle is: {circle.calc_area(answer):.2f}.")
                 input("\nPlease press Enter to continue...")
 
             elif choice == 3:
-                rectangle.calc_area()
+                print(f"\nThe area of the rectangle is: {rectangle.calc_area(answer):.2f}.")
                 input("\nPlease press Enter to continue...")
 
             elif choice == 4:
-                rectangle.calc_perimeter()
-                input("Please press Enter to continue...")
+                print(f"\nThe perimeter of the rectangle is: {rectangle.calc_perimeter(answer):.2f}.")
+                input("\nPlease press Enter to continue...")
 
             elif choice == 5:
                 print("\nGoodbye!")

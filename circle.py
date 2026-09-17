@@ -1,10 +1,13 @@
 
-def calc_area():
+def calc_area(answer):
     radius = float(input("\nEnter the radius of the circle: "))
     area = 3.14159 * (radius ** 2)
-    print(f"\nThe area of the circle is: {area:.2f}.")
+    answer = area
+    return answer
 
-def calc_circumference():
+def calc_circumference(answer):
     radius = float(input("\nEnter the radius of the circle: "))
     circumference = 2 * 3.14159 * radius
-    print(f"\nThe circumference of the circle is: {circumference:.2f}.")
+    answer = circumference
+    return answer
+    
